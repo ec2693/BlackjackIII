@@ -141,25 +141,22 @@ class ViewController: UIViewController {
     
     @IBAction func stand(sender: AnyObject) {
         var allPlayersPlayed = true
-        for i in 1...numberOfPlayers{
-            var player = playerList[i-1]
-            if(player.playerStatus == PlayerStatus.Turn){
-                player.playerStatus = PlayerStatus.Stand
-                if(i != numberOfPlayers){
-                    playerList[i].playerStatus = PlayerStatus.Turn
-                }
-                break
+        
+        
+            if(playerList[0].playerStatus == PlayerStatus.Turn){
+                playerList[0].playerStatus = PlayerStatus.Stand
+                
+                    playerList[1].playerStatus = PlayerStatus.Turn
+                
+               
             }
+        while(playerList[1].playerSum != 17){
+            let shoe = Shoe()
+            playerList[1].playerCards.append(shoe.getCardFromShoe())
         }
-        for i in 1...numberOfPlayers{
-            var player = playerList[i-1]
-            if(player.playerStatus == PlayerStatus.Turn){
-                allPlayersPlayed = false
-            }
-        }
-        if(allPlayersPlayed){
-            dealerChance()
-        }
+        cardsDisplay(playerList[1].playerCards, playerCardView: AIView, yCord: 8, dcard :dealercard)
+        
+        //dealerChance()
     }
     
     
@@ -339,7 +336,7 @@ class ViewController: UIViewController {
     
     
     
-    func cardsDisplay (cards : [Int],  playerCardView : UIView, yCord : CGFloat , dcard : Bool){
+    func cardsDisplay (cardsarray : [Int],  playerCardView : UIView, yCord : CGFloat , dcard : Bool){
         
         var offset : CGFloat = 32
         
@@ -347,19 +344,8 @@ class ViewController: UIViewController {
         
         var subViews = playerCardView.subviews
         
-        //for u in subViews as [UIView] {
-            
-            
-            
-          //  if (u.tag == 100){
-                
-            //    u.removeFromSuperview()
-                
-            //}
-            
-        //}
         
-        for i in 1...cards.count{
+        for i in 1...cardsarray.count{
             
             
             
@@ -381,7 +367,7 @@ class ViewController: UIViewController {
                 
                 
                 
-                imageName = "card"+String(cards[i-1])
+                imageName = "card"+String(cardsarray[i-1])
           
             }
             

@@ -204,7 +204,7 @@
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.27818668740000002" green="0.41389918390000002" blue="0.61618134469999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.73333333329999995" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="kaK-T5-SCh" firstAttribute="leading" secondItem="WCG-ea-aY6" secondAttribute="leading" constant="17" id="G0v-Em-tcT"/>
                                             <constraint firstItem="kaK-T5-SCh" firstAttribute="top" secondItem="WCG-ea-aY6" secondAttribute="top" constant="8" id="Tgj-c8-jAA"/>
@@ -222,7 +222,7 @@
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="0.21722644122344903" blue="0.28580109798875308" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.73333333329999995" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="hU1-Nd-abB" firstAttribute="leading" secondItem="VOI-Sg-19i" secondAttribute="leading" constant="17" id="2vL-0a-Rfy"/>
                                             <constraint firstAttribute="width" constant="120" id="Rse-Cv-9bi"/>
@@ -230,7 +230,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.081874815549999994" green="0.40173611110000002" blue="0.1277719162" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.63241704386057496" green="0.30575492169481155" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="VOI-Sg-19i" secondAttribute="trailing" constant="8" id="Adr-Kk-bQw"/>
                                     <constraint firstItem="VOI-Sg-19i" firstAttribute="top" secondItem="kVd-id-3ne" secondAttribute="top" constant="8" id="Eso-DT-Rvs"/>
@@ -249,6 +249,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="OYb-9l-OOW" firstAttribute="top" secondItem="kVd-id-3ne" secondAttribute="bottom" constant="20" id="210-It-GNd"/>
                             <constraint firstItem="kVd-id-3ne" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="DuM-rW-c7U"/>
                             <constraint firstAttribute="trailing" secondItem="OYb-9l-OOW" secondAttribute="trailing" id="E4X-Bg-WLu"/>
                             <constraint firstItem="kVd-id-3ne" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="G9g-Ym-YgP"/>
